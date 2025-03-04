@@ -46,10 +46,10 @@ swiftc ../Macembot.swift main.swift
 ./main
 ```
 
-### servo for EMBOT / EMBOTPLUS
+### servo for embot / embot+
 
 ```
-cd servo_EMBOT
+cd servo_embot
 swiftc ../Macembot.swift main.swift
 ./main
 ```
