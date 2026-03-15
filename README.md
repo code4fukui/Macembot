@@ -1,5 +1,7 @@
 # Macembot
 
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+
 F503i and embot driver in Swift
 
 ## Demo
