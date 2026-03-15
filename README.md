@@ -2,83 +2,70 @@
 
 F503i and embot driver in Swift
 
-## example
-
-```
-import Foundation
-
-let emb = Macembot()
-
-var n = 0
-Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
-  emb.led(idx: 1, n: n % 2 == 0, brightness: 255)
-  n += 1
-  print("\(n)")
-}
-
-RunLoop.main.run()
-```
-
-## API
-
-- led(idx, n, brightness = 255) // idx:1-3, n:Bool
-- buzzer(n) // 51=C?
-- servo(idx, n) // idx:1-3, n:0-180
-- getBrightness() -> Uint16 0-600
-- setKeyDownListener(_ callback: (UInt32) -> Void)
-- setKeyUpListener(_ callback: (UInt32) -> Void)
-
-## demo
+## Demo
 
 ### LED
-
 ```
 cd led
 swiftc ../Macembot.swift main.swift
 ./main
 ```
 
-### music
-
+### Music
 ```
 cd music
 swiftc ../Macembot.swift main.swift
 ./main
 ```
 
-### servo for embot / embot+
-
+### Servo for embot / embot+
 ```
 cd servo_embot
 swiftc ../Macembot.swift main.swift
 ./main
 ```
 
-### keys for F503i
-
+### Keys for F503i
 ```
 cd keys_F503i
 swiftc ../Macembot.swift main.swift
 ./main
 ```
 
-### lightsensor for F503i
-
+### Light sensor for F503i
 ```
 cd lightsensor_F503i
 swiftc ../Macembot.swift main.swift
 ./main
 ```
 
-### keyboard for F503i
-
+### Keyboard for F503i
 ```
 cd keyboard_by_F503i
 swiftc ../Macembot.swift main.swift
 ./main
 ```
 
-## related
+## Features
 
-- [code4fukui/Webembot: Webembot is a driver API for embot, embot plus and F503i.](https://github.com/code4fukui/Webembot)
-- [wakwak-koba/F503i: 小学館 小学8年生 2025年スペシャル4月号に付属の F503i を ESP32 で操るライブラリ](https://github.com/wakwak-koba/F503i)
+- Control LED, buzzer, and servo motors for embot, embot+, and F503i devices
+- Access light sensor and keyboard input on F503i
+- Swift-based driver API
+
+## Requirements
+
+- Swift 5.0 or later
+- Xcode
+
+## Usage
+
+1. Clone the repository
+2. Navigate to the desired demo directory
+3. Compile the Swift code with `swiftc ../Macembot.swift main.swift`
+4. Run the compiled binary with `./main`
+
+## License
+
+MIT License
+
+Copyright (c) 2025 Taisuke Fukuno
