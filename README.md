@@ -68,6 +68,4 @@ swiftc ../Macembot.swift main.swift
 
 ## License
 
-MIT License
-
-Copyright (c) 2025 Taisuke Fukuno
+MIT License — see [LICENSE](LICENSE).
